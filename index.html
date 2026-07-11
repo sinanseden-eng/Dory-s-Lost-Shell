@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dory's Lost Shell</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 { color: #0277bd; }
+        h2 { color: #00838f; }
+        p { font-size: 20px; line-height: 1.6; }
+        .btn {
+            display: inline-block;
+            background-color: #ffab00;
+            color: black;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover { background-color: #ff6f00; }
+        .scene {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        #page1 { display: block; }
+        .restart { background-color: #0277bd; color: white; }
+        .restart:hover { background-color: #01579b; }
+        .story-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 5px solid #4dd0e1;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1 -->
+    <div id="page1" class="scene">
+        <h1>Dory's Lost Shell</h1>
+        <img src="1.jpg" alt="A Beautiful Morning" class="story-image">
+        <p>Dory was a fish. She was a regal blue tang fish. She lived in the ocean. She lived in a coral reef. The coral reef was very colorful. It had many plants. It had many animals.</p>
+        <p>Dory woke up early. The sun was bright. The water was warm. Dory was very happy.</p>
+        <button class="btn" onclick="showScene('page2')">To see what happens next, go to PAGE 2</button>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div id="page2" class="scene">
+        <h2>Something is Missing!</h2>
+        <img src="2.jpg" alt="Dory looking confused" class="story-image">
+        <p>Dory stopped swimming. She looked at her fins. She looked around the coral. She felt like she forgot something. Dory was very forgetful. What did she forget?</p>
+        <p>"Marlin!" Dory called out loudly. "Nemo!"</p>
+        <p>Marlin swam over to Dory. He was a clownfish. He had orange and white stripes. Nemo swam over, too. Nemo was Marlin's son.</p>
+        <button class="btn" onclick="showScene('page3')">To see what Marlin says, go to PAGE 3</button>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div id="page3" class="scene">
+        <h2>The Big Search</h2>
+        <img src="3.jpg" alt="Marlin and Nemo talking to Dory" class="story-image">
+        <p>"What is wrong, Dory?" asked Marlin.</p>
+        <p>"My purple shell is gone," said Dory. "I cannot find it anywhere."</p>
+        <p>Marlin sighed. "You took it to the Marine Life Institute," he said. "You went there last night."</p>
+        <p>"Oh no," said Dory. "I must go back."</p>
+        <p>"We will help you look," said Nemo.</p>
+        <p>The three friends swam very far. They reached the Marine Life Institute. It was very big. It had many pools and dark pipes. Dory had to choose where to look first.</p>
+        <button class="btn" onclick="showScene('page4')">If Dory swims into the dark pipes, go to PAGE 4</button>
+        <button class="btn" onclick="showScene('page5')">If Dory swims to the big open pool, go to PAGE 5</button>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div id="page4" class="scene">
+        <h2>Inside the Pipes</h2>
+        <img src="4.jpg" alt="Dark pipes in the institute" class="story-image">
+        <p>Dory swam into the pipes. Marlin and Nemo followed her. The pipes were dark. The pipes were cold. Dory swam slowly.</p>
+        <p>She looked at the wall. The wall was green. The wall looked exactly like a plant. Suddenly, two eyes opened!</p>
+        <button class="btn" onclick="showScene('page6')">To see who is hiding on the wall, go to PAGE 6</button>
+    </div>
+
+    <!-- PAGE 5 -->
+    <div id="page5" class="scene">
+        <h2>The Big Pool</h2>
+        <img src="5.jpg" alt="The big open pool" class="story-image">
+        <p>Dory swam to the big open pool. The sun shone on the water. It was very bright. Marlin and Nemo swam behind her.</p>
+        <p>They saw a giant shadow in the water. It was Destiny! Destiny was a whale shark. Whale sharks are the largest living fish. She had dark skin with light spots.</p>
+        <button class="btn" onclick="showScene('page7')">To see what Destiny and Bailey say, go to PAGE 7</button>
+    </div>
+
+    <!-- PAGE 6 -->
+    <div id="page6" class="scene">
+        <h2>Meeting Hank</h2>
+        <img src="6.jpg" alt="Hank the octopus on the wall" class="story-image">
+        <p>It was Hank! Hank was an octopus. He was very good at hiding. He could change his color and his texture. This is called camouflage.</p>
+        <p>"Hello, Hank," said Dory.</p>
+        <p>Hank frowned. He was grumpy. "What do you want, Dory?" he asked.</p>
+        <p>"I lost my purple shell," Dory said. "Did you see it?"</p>
+        <p>Hank rolled his eyes. He moved his long tentacles. "Yes, I saw it yesterday. But you dropped it. Maybe you dropped it in the kids' Touch Tank. Or maybe you dropped it down in the Deep Tank."</p>
+        <button class="btn" onclick="showScene('page8')">If Dory goes to the kids' Touch Tank, go to PAGE 8</button>
+        <button class="btn" onclick="showScene('page9')">If Dory goes to the Deep Tank, go to PAGE 9</button>
+    </div>
+
+    <!-- PAGE 7 -->
+    <div id="page7" class="scene">
+        <h2>Sonic Sounds</h2>
+        <img src="7.jpg" alt="Destiny and Bailey" class="story-image">
+        <p>Destiny swam fast. She bumped her head on the wall. "Ouch!" said Destiny. Destiny could not see well. She was nearsighted.</p>
+        <p>"Hi, Dory!" Destiny smiled. She opened her very wide mouth.</p>
+        <p>Then, they heard a loud noise. "Squawk! Chirp!" It was Bailey the beluga whale. He was entirely white. He had a big round melon on his head. Bailey used his melon to make sounds. This is called echolocation.</p>
+        <p>"I hear a small shell," said Bailey. "My sonar says it is in the Kelp Forest."</p>
+        <p>"No," said Destiny. "I saw a purple flash near the Quarantine pool."</p>
+        <button class="btn" onclick="showScene('page10')">If Dory goes to the Kelp Forest, go to PAGE 10</button>
+        <button class="btn" onclick="showScene('page11')">If Dory goes to the Quarantine pool, go to PAGE 11</button>
+    </div>
+
+    <!-- PAGE 8 -->
+    <div id="page8" class="scene">
+        <h2>The Touch Tank</h2>
+        <img src="8.jpg" alt="The shallow Touch Tank" class="story-image">
+        <p>Dory swam to the Touch Tank. The water was very shallow. Dory looked around. She looked under a rock. She looked near the glass.</p>
+        <p>"There it is!" said Dory. The purple shell was resting on the sand. Dory swam to the shell.</p>
+        <p>But then, a giant shadow fell over her. It was a hand! A human child put a hand in the water. The hand splashed. Dory was scared.</p>
+        <button class="btn" onclick="showScene('page12')">To see if Dory gets the shell, go to PAGE 12</button>
+    </div>
+
+    <!-- PAGE 9 -->
+    <div id="page9" class="scene">
+        <h2>The Deep Tank</h2>
+        <img src="9.jpg" alt="The dark Deep Tank" class="story-image">
+        <p>Dory swam to the Deep Tank. The water was deep. The water was dark.</p>
+        <p>Dory swam down. Marlin and Nemo swam down, too. They swam past rocks. They swam past plants.</p>
+        <p>"It is very dark," said Nemo.</p>
+        <p>"Do not be afraid," said Marlin.</p>
+        <p>Dory looked in the sand. She saw something. It was small. It was purple. It was her shell! Dory swam to the shell. She tried to pick it up. But the shell moved!</p>
+        <button class="btn" onclick="showScene('page13')">To see what moves the shell, go to PAGE 13</button>
+    </div>
+
+    <!-- PAGE 10 -->
+    <div id="page10" class="scene">
+        <h2>The Kelp Forest</h2>
+        <img src="10.jpg" alt="The kelp forest and sea otter" class="story-image">
+        <p>Dory swam to the Kelp Forest. The kelp was tall. The kelp looked like tall green trees in the water. Dory swam through the kelp leaves.</p>
+        <p>Then, she saw something brown. It was a sea otter. The sea otter had thick fur to keep warm. The sea otter floated on its back. It had a small rock to break hard shells.</p>
+        <p>"Hello!" said Dory. "Did you see my purple shell?"</p>
+        <p>The sea otter looked at Dory. The otter pointed its paw down.</p>
+        <button class="btn" onclick="showScene('page14')">To see what is near the shell, go to PAGE 14</button>
+    </div>
+
+    <!-- PAGE 11 (Ending 4) -->
+    <div id="page11" class="scene">
+        <h2>A Clumsy Bird (Ending 4)</h2>
+        <img src="11.jpg" alt="Becky the loon and the bucket" class="story-image">
+        <p>Dory swam to the Quarantine pool. She put her head out of the water. She saw a bird named Becky. Becky was a Common Loon. She had a black head and bright red eyes.</p>
+        <p>"Hello, Becky," said Dory. "Did you see my purple shell?"</p>
+        <p>Becky looked at Dory. Becky made a loud sound. "Ooo-ooo!" Becky walked on the land. She looked very clumsy. Loons are awkward walkers.</p>
+        <p>Becky picked up a yellow bucket. She dropped it. SPLASH! The bucket fell right on top of Dory! Dory was trapped inside. Marlin and Nemo pushed the bucket very hard. Finally, the bucket tipped over and Dory swam out.</p>
+        <p>Becky flew away. The purple shell was not there. Destiny made a mistake. Dory was tired. She decided to go home without her shell.</p>
+        <p><b>THE END. (You got trapped in a bucket and lost the shell. Try again!)</b></p>
+        <button class="btn restart" onclick="showScene('page1')">Read Again</button>
+    </div>
+
+    <!-- PAGE 12 (Ending 1) -->
+    <div id="page12" class="scene">
+        <h2>Lost in the Crack (Ending 1)</h2>
+        <img src="12.jpg" alt="Shell stuck in a crack" class="story-image">
+        <p>More giant hands came into the water. The children wanted to touch the fish.</p>
+        <p>"Watch out, Dory!" yelled Marlin.</p>
+        <p>Dory swam away fast. She hid under a big rock with Nemo and Marlin. The children did not see Dory.</p>
+        <p>But a child kicked the water. The purple shell floated away. It fell into a deep crack in the rocks. Dory waited a long time. The children finally left. But Dory could not reach the shell. The crack was too deep. Dory was sad. She went home without her toy.</p>
+        <p><b>THE END. (You lost the shell. Try again!)</b></p>
+        <button class="btn restart" onclick="showScene('page1')">Read Again</button>
+    </div>
+
+    <!-- PAGE 13 (Ending 2) -->
+    <div id="page13" class="scene">
+        <h2>Hank's Surprise (Ending 2)</h2>
+        <img src="13.jpg" alt="Hank giving Dory the shell" class="story-image">
+        <p>A long arm grabbed the shell. The arm had suction cups. It was Hank! Hank was hiding in the dark. He changed his color to look like the dark sand.</p>
+        <p>"I found this," Hank said. He gave the purple shell to Dory.</p>
+        <p>"Oh, Hank! Thank you!" Dory said.</p>
+        <p>Hank smiled a little bit. "You are welcome, Dory. Now go home. I want to sleep."</p>
+        <p>Dory held her shell tightly. She was very happy. Marlin and Nemo were happy, too. They all swam back to the reef together.</p>
+        <p><b>THE END. (You found the shell!)</b></p>
+        <button class="btn restart" onclick="showScene('page1')">Read Again</button>
+    </div>
+
+    <!-- PAGE 14 (Ending 3) -->
+    <div id="page14" class="scene">
+        <h2>Sharp Spines (Ending 3)</h2>
+        <img src="14.jpg" alt="Sea otter with the urchin and shell" class="story-image">
+        <p>Dory looked down. The purple shell was on the kelp leaves. But a sea urchin was near it. The sea urchin had very sharp spines.</p>
+        <p>"Be careful!" said Marlin.</p>
+        <p>The sea otter swam down. The otter picked up the sea urchin. Otters love to eat sea urchins. The purple shell was safe now!</p>
+        <p>Dory swam down and took her shell. "Thank you, sea otter!" said Dory. Dory found her favorite toy. She went back to the coral reef to play happily.</p>
+        <p><b>THE END. (You found the shell and made a new friend!)</b></p>
+        <button class="btn restart" onclick="showScene('page1')">Read Again</button>
+    </div>
+
+    <script>
+        function showScene(sceneId) {
+            var scenes = document.getElementsByClassName('scene');
+            for (var i = 0; i < scenes.length; i++) {
+                scenes[i].style.display = 'none';
+            }
+            document.getElementById(sceneId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
